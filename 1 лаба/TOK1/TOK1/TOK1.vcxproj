@@ -145,10 +145,20 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="IMessageClient.h" />
+    <ClInclude Include="IReceiver.h" />
+    <ClInclude Include="ISender.h" />
+    <ClInclude Include="libSrc\CryptoPrimitives.h" />
+    <ClInclude Include="libSrc\ModSystem.h" />
+    <ClInclude Include="Server.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Сhannel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="libSrc\CryptoPrimitives.cpp" />
+    <ClCompile Include="libSrc\ModSystem.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -156,6 +166,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TOK1.cpp" />
+    <ClCompile Include="Сhannel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
